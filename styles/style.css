@@ -1,1 +1,96 @@
-/* место для вашего кода */
+/* раздел header */
+.header {
+
+}
+
+.menu {
+
+}
+
+.menu__list {
+
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+
+}
+
+.menu__link.active {
+
+}
+
+.logo {
+
+}
+
+.logo__image {
+
+}
+
+.address {
+
+}
+
+.address__link {
+
+}
+
+.address__text {
+
+}
+
+/* раздел main */
+.cover {
+
+}
+
+.title {
+
+}
+
+.description {
+
+}
+
+.description__text {
+
+}
+
+.button {
+    
+}
+
+/* раздел с лотами */
+.lots {}
+.lots__heading {}
+.lots__card-list {}
+.lots__card-list-item {}
+.card-link {}
+.card {}
+.card_type_film {}
+.card_type_book {}
+.card_type_picture {}
+.overlay {}
+.card__title {}
+.card__text {}
+.lots__look-more-link {}
+
+/* раздел об аукционе */
+.about {}
+.about__column {}
+.about__logo {}
+.about__logo-image {}
+.about__title {}
+.about__text {}
+
+/* раздел footer */
+.footer {}
+.social {}
+.social__list {}
+.social__item {}
+.social__link {}
+.social__icon {}
