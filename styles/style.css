@@ -1,42 +1,58 @@
 /* раздел header */
 .header {
-
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px;
 }
 
 .menu {
-
+    
 }
 
 .menu__list {
-
+    display: flex;
+    gap: 32px;
+    list-style: circle;
 }
 
 .menu__item {
+    list-style: circle;
+}
 
+.menu__item_no-bullit {
+    list-style: none;
 }
 
 .menu__link {
-
+    font-size: 18px;
+    text-underline-offset: 4px;
 }
 
 .menu__link.active {
-
+    text-decoration: none;
 }
 
 .logo {
-
+    display: block;
+    width: 148px;
 }
 
 .logo__image {
-
+    width: 100%;
 }
 
 .address {
-
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.35;
+    justify-self: end;
+    max-width: 240px;
 }
 
 .address__link {
-
+    text-underline-offset: 4px;
 }
 
 .address__text {
@@ -45,15 +61,53 @@
 
 /* раздел main */
 .cover {
-
+    margin-bottom: 180px;
+    padding: 165px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-.title {
-
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba (0, 0, 0, 0.6);
 }
 
-.description {
+.cover__title{
+    z-index: 1;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 135px;
+}
 
+/* ОНО ТЕБЕ НАДО */
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+
+
+.cover__description {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 78px;
 }
 
 .description__text {
@@ -65,30 +119,130 @@
 }
 
 /* раздел с лотами */
-.lots {}
-.lots__heading {}
-.lots__card-list {}
-.lots__card-list-item {}
-.card-link {}
-.card {}
-.card_type_film {}
-.card_type_book {}
-.card_type_picture {}
+.lots {
+    margin-bottom: 180px;
+    padding: 0 50px;
+}
+
+.lots__heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 27px;
+    margin-left: 40px;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    list-style: none;;
+}
+.lots__card-list-item {
+    flex: 1;
+    min-height: 450px;
+}
+.card-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+}
+.card {
+    position: relative;
+    height: 100%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+}
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
 .overlay {}
-.card__title {}
-.card__text {}
-.lots__look-more-link {}
+.card__title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    z-index: 1;
+}
+.card__text {
+    font-size: 20px;
+    z-index: 1;
+}
+.lots__look-more-link {
+    font-size: 20px;
+    margin-left: 40px;
+    text-underline-offset: 5px;
+}
 
 /* раздел об аукционе */
-.about {}
-.about__column {}
-.about__logo {}
-.about__logo-image {}
-.about__title {}
-.about__text {}
+.about {
+    margin-bottom: 180px;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 430px 1fr;
+    gap: 25px;
+}
+.about__column {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.about__logo-image {
+    width: 148px;
+}
+.about__title {
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 20px;
+}
 
 /* раздел footer */
-.footer {}
+.footer {
+    display: grid;
+    padding: 180px 50px 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+}
 .social {}
 .social__list {}
 .social__item {}
