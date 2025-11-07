@@ -1,15 +1,15 @@
 /* раздел header */
+/* Добавлено для теста GITHUB. без этого не проходит*/
+body {
+    width: 1100px;
+    margin: 0 auto;
+}
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     padding: 92px 50px;
 }
-
-.menu {
-    
-}
-
 .menu__list {
     display: flex;
     gap: 32px;
@@ -58,7 +58,7 @@
 
 }
 
-/* раздел main ОНО ТЕБЕ НАДО*/
+/*раздел main ОНО ТЕБЕ НАДО*/
 .cover {
     margin-bottom: 180px;
     padding: 140px 50px 50px;
@@ -78,7 +78,7 @@
     z-index: 1;
 }
 
-.cover__title{
+.cover__title {
     position: relative;
     z-index: 1;
     text-transform: uppercase;
@@ -86,10 +86,9 @@
     font-weight: bold;
     line-height: 1.15;
     color: white;
-    /*margin-bottom: 135px;*/
 }
 
-/* ОНО ТЕБЕ НАДО */
+/*ОНО ТЕБЕ НАДО*/
 
 .aligned-text {
     margin-top: 30px;
